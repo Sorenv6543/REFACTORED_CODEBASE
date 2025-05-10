@@ -1,0 +1,62 @@
+{
+    "mcpServers": {
+            "allpepper-memory-bank": {
+              "command": "npx",
+              "args": ["-y", "@allpepper/memory-bank-mcp"],
+              "env": {
+                "MEMORY_BANK_ROOT": "C:\\Users\\Soren\\.memory-bank"
+              },
+              "disabled": false,
+              "autoApprove": [
+                "memory_bank_read",
+                "memory_bank_write",
+                "memory_bank_update",
+                "list_projects",
+                "list_project_files"
+              ]
+            },
+        "filesystem": {
+            "command": "cmd /c",
+            "args": [
+                "npx -y @modelcontextprotocol/server-filesystem",
+                "C:\\Users\\Soren\\"
+            ]
+        },
+        "sequential-thinking": {
+            "command": "cmd /c",
+            "args": [
+                "npx -y @modelcontextprotocol/server-sequential-thinking",
+                "C:\\Program Files\\nodejs\\node.exe"
+            ]
+        },
+
+        "context7": {
+            "command": "cmd /c",
+            "args": [
+                "npx -y @upstash/context7-mcp@v1.0.8"
+            ]
+        },
+        "browser-tools": {
+            "command": "cmd /c",
+            "args": [
+                "npx -y @agentdeskai/browser-tools-mcp@1.2.1"
+            ],
+            "enabled": true
+        },  
+        "mcp-compass": {
+            "command": "node",
+            "args": [
+               "C:\\Users\\soren\\AppData\\Roaming\\npm\\node_modules\\@upstash\\context7-mcp\\dist\\index.js"
+            ]
+         },
+         "playwright": {
+            "command": "npx",
+            "args": [
+              "@playwright/mcp@latest"
+            ]
+          }
+
+
+        }
+    
+}
