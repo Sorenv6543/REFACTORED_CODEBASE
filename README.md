@@ -32,19 +32,47 @@ src/
 
 ## Development Setup
 
-1. Install dependencies:
+### Prerequisites
+- Node.js (LTS version)
+- pnpm
+
+### Installation
+
 ```bash
-npm install
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
+
+# Lint and fix files
+pnpm lint
+
+# Format code
+pnpm format
+
+# Type check
+pnpm typecheck
 ```
 
-2. Start the development server:
+## Using pnpm
+
+This project uses pnpm as the package manager. If you don't have pnpm installed, you can install it globally:
+
 ```bash
-npm run dev
+npm install -g pnpm
 ```
 
-3. Build for production:
+Or use npx to run it without installing:
+
 ```bash
-npm run build
+npx pnpm install
 ```
 
 ## Code Conventions
